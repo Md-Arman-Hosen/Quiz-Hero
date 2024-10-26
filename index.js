@@ -111,7 +111,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
   console.log(storage);
-    if (storage) {
+  if (storage) {
     localStorage.setItem(
       "results",
       JSON.stringify([
@@ -148,9 +148,9 @@ document.querySelector("#submit").addEventListener("click", () => {
     </h1>
     <p class="text-sm flex justify-center items-center gap-2">
       Total Time: <span class="text-xl text-orange-500">${timeTaken.innerText.replace(
-        "sec",
-        ""
-      )}<span class="text-xs">sec</span></span>
+      "sec",
+      ""
+    )}<span class="text-xs">sec</span></span>
     </p>
   </div>
   
@@ -183,3 +183,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+//blog button location
+document.getElementById('blog-button').addEventListener('click', function () {
+  window.location.href = 'blog.html';
+})
