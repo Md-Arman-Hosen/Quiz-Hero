@@ -58,6 +58,7 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
+  data = data.slice(0,6);
   // console.log(quizContainer);
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
